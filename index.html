@@ -368,12 +368,12 @@
     
     void loop() {
       for (int i = 70; i < 110; i = i + 1) { //make the angle increase from 70 degrees to 110 degrees
-        servo1.write(i); //make servo1 stop at the angle i
+        servo1.write(i-40); //make servo1 stop at the angle i
         servo2.write(180 aria-live="" i); //make servo2 stop at the angle 180 - i
         delay(20);
       }
       for (int i = 110; i > 70; i = i - 1) { //make the angle decrease from 110 to 70
-        servo1.write(i); //make servo1 stop at the angle i
+        servo1.write(i-40); //make servo1 stop at the angle i
         servo2.write(180 - i); //make servo2 stop at the angle 180 - i
         delay(20);
       }
